@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+
+      <title>Yunlin Li - AR Children Story App</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header header-pages" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">YunLin Li</a>
+            
+            <div class="nav__menu" id="nav-menu">
+               
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">About Me</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="work.html" class="nav__link">Portfolio</a>
+                  </li>
+
+                  <!-- <li class="nav__item">
+                     <a href="contact.html" class="button">Contact</a>
+                  </li> -->
+               </ul>
+            
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+               
+            </div>
+
+               <div class="nav__actions">
+                  <i class="ri-moon-line change-theme" id="theme-button"></i>
+                  <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-apps-2-line"></i>
+                  </div>
+               </div>
+            
+         </nav>
+      </header>
+
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== GAME ====================-->
+         <section class="about section">
+            <h2 class="section__title">
+               AR Children Story App - Augmenting the Gruffalo (Scene 1)
+            </h2>
+
+            <h3 style="justify-content: center;align-items: center;"></h3>
+            <div class="container about__description">
+                  <h3>Description</h3><br>
+                  The aim of this project was to create the first scene of The Gruffalo story. 
+                  In this scene, the fox saw the mouse in the wood and invited him to his house. 
+                  The mouse knew that the fox wanted to eat him, so he pretended that he had a appointment with the Gruffalo, 
+                  who has a terrible appearance and loves fox meat, and the fox was scared and ran away. 
+                  
+                  AR features (<b>3D Animation Effect, 3D Asset Modelling, Image Tracking, Light Estimation, and Raycast</b> ) are included:<br>
+                  <b>1. </b>Image Tracking - Track the image of hole to trigger forest model and fix its position. <br>
+
+                  <b>2. </b>Raycast - Hole on user's touch (triggers fox running in/out of the hole); Fox on user's touch 
+                  (triggers the dialog between fox and mouse and show gruffalo's features).  <br>
+
+                  <b>3. </b>Light Estimation - ARFoundation to adjust the scene's lighting settings to match the real-world lighting conditions.  <br>
+
+                  <b>4. </b>3D Asset Modelling - Photogrammetry in RealityCapture and export .obj file to maya.  <br>
+
+                  <b>5. </b>3D Animation Effect - Create joints and controllers, bind skin, bake animation and export in maya for the fox's walking, export .fbx file.  <br>
+            </div>
+
+            
+
+            <div class="about__container about__page container grid">
+               <!-- <div class="about__perfil work__perfil">
+                  <div class="">
+                     <video class="gruffalo__perfil__content" controls  >
+                        <source src="assets/ling ar.mp4" type="video/mp4" >
+                      </video>
+                  </div>
+               </div> -->
+
+               <div class="about__perfil work__swiper__container">
+                  <div class="work__swiper__gruffalo swiper ">
+                     <div class="swiper-wrapper">
+                        
+                        
+                        <article class="swiper-slide">
+                           <video class="work__swiper__content" controls>
+                              <source src="assets/ling ar.mp4" type="video/mp4">
+                           </video>
+                        </article>
+                        <article class="swiper-slide">
+                           <img src="assets/img/gruffalo/foxafter.png"class="work__swiper__content" alt="">
+                        </article>
+                     
+                        <article class="swiper-slide">
+                           <img src="assets/img/gruffalo/fox.gif"class="work__swiper__content" alt="">
+                        </article>
+                        <article class="swiper-slide">
+                           <img src="assets/img/gruffalo/cave.png"class="work__swiper__content" alt="">
+                        </article>
+
+                        
+                     </div>
+                     <!-- If we need pagination -->
+                     <div class="swiper-pagination"></div>
+                  </div>
+                  
+               </div>
+
+               <div class="about__content grid">
+                  <div class="about__data grid">
+                     <div class="about__info grid">
+                        <h3 class="">Responsibilities & Related Skills</h3>
+                        
+                        <!-- <h2 class="about__profession">Game Designer</h2> -->
+                        <p class="about__description">
+                        <b style="font-size: 25px;">1. </b>Designed the UI and Created the first scene of The Gruffalo story in Unity using AR techniques (e.g. tracking, raycast, light estimation, etc.).<br>
+                        <b style="font-size: 25px;">2. </b>Used RealityCapture to create the virtual 3D model of the character and created the animation in Maya.<br>
+                        <b style="font-size: 25px;">3. </b>Ensured the scene cohesion and demonstrated the application with other teammates.
+
+                        </p>
+
+                        <div class="skill__container">
+                           <div class="skill__box">Unity</div>
+                           <div class="skill__box">C#</div>
+                           <div class="skill__box">AR</div>
+                           <div class="skill__box" style="border-radius: 9%;">RealityCapture</div>
+                           <div class="skill__box">Maya</div>
+                        </div>
+                     </div>
+                     
+                  </div>
+
+                  <!-- <div class="about__skills">
+                     <h3 class="about__skills-title">My Skills Are</h3>
+                     <div class="about__skills-content grid">
+                        <img src="assets/img/about-css.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-html.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-github.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-javascript.svg" alt="image" class="about__skills-img">
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+         </section>
+      </main>
+
+
+      <!--================= MORE PICTURES ========================-->
+      
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <a href="index.html" class="footer__logo">Yunlin</a>
+               <ul class="footer__links">
+                  <li>
+                     <a href="about.html" class="footer__link">About Me</a>
+                  </li>
+
+                  <li>
+                     <a href="work.html" class="footer__link">Portfolio</a>
+                  </li>
+
+                  <!-- <li>
+                     <a href="contact.html" class="footer__link">Contact Me</a>
+                  </li> -->
+               </ul>
+
+               <div class="footer__social">
+                  <a href="https://www.linkedin.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-linkedin-box-fill"></i>
+                  </a>
+
+                  <a href="https://github.com/ling428lyl" target="_blank" class="footer__social-link">
+                     <i class="ri-github-fill"></i>
+                  </a>
+               </div>
+               
+               <span class="footer__copy">
+                  <h3 style="color: white;">Contact: <a id="email" href="#">ling428lyl@gmail.com</a></h3> <br><br>
+                     &#169; All Rights Reserved By Bedimcode
+               </span>
+            </div>
+         </div>
+      </footer>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="assets/js/imgSwiper.js"></script>
+   </body>
+</html>
