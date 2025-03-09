@@ -201,6 +201,16 @@ body.dark-theme{
   place-items:center;
   transition: background-color .4s;
 }
+.perfil__empty{
+  width: 450px;
+  height: 450px;
+  /* background-color: var(--body-color);
+  border: 8px solid var(--first-color);
+  border-radius: 50%; */
+  display: grid;
+  place-items:center;
+  transition: background-color .4s;
+}
 
 .perfil__content{
   width: 180px;
@@ -824,10 +834,11 @@ border-radius: 2.5%;
   bottom: -50%;
   background-color: var(--container-color);
   box-shadow: 0 12px 24px var(--shadow-color);
+  border-radius: 3px;
   display: inline-flex;
   padding: 6px;
   font-size: 1.25rem;
-  color:var(--title-color);
+  color:var(--first-color);
   z-index: var(--z-tooltip);
   transition:bottom .4s,transform .4s,backgroud-color .4s;
 }
@@ -985,6 +996,15 @@ border-radius: 2.5%;
     transform-origin: center;
     top: 1rem;
 }
+.perfil__empty{
+  /* width: 150px; */
+  height: 200px;
+  /* background-color: var(--body-color);
+  border: 8px solid var(--first-color);
+  border-radius: 50%; */
+  display: grid;
+  place-items:center;
+}
 }
 
 @media screen and (max-width:576px){
@@ -994,6 +1014,15 @@ border-radius: 2.5%;
   .header{
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .perfil__empty{
+    /* width: 150px; */
+    height: 200px;
+    /* background-color: var(--body-color);
+    border: 8px solid var(--first-color);
+    border-radius: 50%; */
+    display: grid;
+    place-items:center;
   }
 }
 /* For medium devices */
@@ -1149,6 +1178,15 @@ border-radius: 2.5%;
     transform: scale(1.7);
     transform-origin: center;
     top: 1rem;
+}
+.perfil__empty{
+  /* width: 200px; */
+  height: 200px;
+  /* background-color: var(--body-color);
+  border: 8px solid var(--first-color);
+  border-radius: 50%; */
+  display: grid;
+  place-items:center;
 }
 }
 
@@ -1349,6 +1387,15 @@ border-radius: 2.5%;
     width: 500px;
     height: 500px;
     border-width: 15px;
+  }
+  .perfil__empty{
+    width: 450px;
+    height: 450px;
+    /* background-color: var(--body-color);
+    border: 8px solid var(--first-color);
+    border-radius: 50%; */
+    display: grid;
+    place-items:center;
   }
   .perfil__content{
     width: 360px;
@@ -1607,7 +1654,15 @@ border-radius: 2.5%;
     align-items: flex-end;
     /* background: linear-gradient(180deg,hsl(var(--hue),90%, 80%),hsl(var(--hue),90%, 30%)); */
   }
-
+  .perfil__empty{
+    width: 500px;
+    height: 500px;
+    /* background-color: var(--body-color);
+    border: 8px solid var(--first-color);
+    border-radius: 50%; */
+    display: grid;
+    place-items:center;
+  }
 
   .work__swiper{
     width: 580px;
