@@ -202,7 +202,7 @@ body.dark-theme{
   transition: background-color .4s;
 }
 .perfil__empty{
-  width: 450px;
+  /* width: 450px; */
   height: 450px;
   /* background-color: var(--body-color);
   border: 8px solid var(--first-color);
@@ -871,6 +871,10 @@ border-radius: 2.5%;
   .about__skills-content{
     grid-template-columns: repeat(4,max-content);
   }
+
+  .home__content{
+    text-align: center;
+  }
   .work__swiper{
     width: 200px;
   /* height: auto; */
@@ -1004,6 +1008,7 @@ border-radius: 2.5%;
   border-radius: 50%; */
   display: grid;
   place-items:center;
+  text-align: center;
 }
 }
 
@@ -1023,6 +1028,7 @@ border-radius: 2.5%;
     border-radius: 50%; */
     display: grid;
     place-items:center;
+    text-align: center;
   }
 }
 /* For medium devices */
