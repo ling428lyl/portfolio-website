@@ -19,9 +19,9 @@
       -> Copy the color mode (HSL)
   */
   --hue: 262;
-  --first-color: hsl(var(--hue), 52%, 59%);
-  --first-color-alt: hsl(var(--hue), 82%, 56%);
-  --first-color-light: hsl(var(--hue), 40%, 80%);
+  --first-color: hsl(var(--hue), 52%, 71%);
+  --first-color-alt: hsl(var(--hue), 52%, 59%);
+  --first-color-light: hsl(var(--hue), 52%, 82%);
   --title-color: hsl(var(--hue), 24%, 16%);
   --text-color: hsl(var(--hue), 8%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 60%);
@@ -221,7 +221,7 @@ body.dark-theme{
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background: linear-gradient(180deg,hsl(var(--hue),90%, 80%),hsl(var(--hue),90%, 30%));
+  background: linear-gradient(180deg,var(--first-color),hsl(var(--hue),52%, 40%));
 }
 
 .perfil__img{
@@ -428,10 +428,11 @@ body.dark-theme{
 }
 
 .skill__box{
-  color: var(--first-color);
+  color: var(--first-color-alt);
   background-color: var(--first-color-light);
   font-size: var(--smaller-font-size);
-  margin: 5px;
+  margin: 6px;
+  margin-left: 0;
   padding: 5px;
   border-radius: 15%;
   transition: transform .4s;
