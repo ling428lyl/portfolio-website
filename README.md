@@ -1,3 +1,3 @@
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
+- Responsive personal portfolio website using HTML CSS & JavaScript
 - Contains several pages (Home, About & Work), including a dark & light theme.
 - Compatible with mobile & desktop devices.
